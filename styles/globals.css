@@ -1,0 +1,89 @@
+@import "tailwindcss";
+/* @plugin "daisyui"; */
+
+:root {
+  /* --background: #ffffff; */
+  /* --foreground: #171717; */
+  font-family: "Onest", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.theme-box {
+  @apply bg-[#f9f9fa] dark:bg-[#1a1a1a] text-black dark:text-white;
+}
+
+/* nprogress custom overrides */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #29d; /* your brand color */
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px; /* thickness */
+}
+
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+  opacity: 1;
+  transform: rotate(3deg) translate(0px, -4px);
+}
+
+#nprogress .spinner {
+  display: none; /* hide spinner */
+}
+
+
+.eHAmuB{
+  display: block;
+}
+
+.fCzDDc{
+  width: 323.5px;
+}
+
+.jZMdJd{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.fLEZPc{
+  width: 56px;
+  width: 56px;
+  background: rgba(33, 33, 33);
+  border-radius: 50%;
+  position: relative;
+}
+
+.dXonOA{
+  height: 56px;
+  width: 124px;
+  background: rgb(33, 33, 33);
+  border-radius: 52%;
+  position: relative;
+}
+
+.jFfECc{
+  display: grid;
+  grid-template-columns: 56px 56px;
+  width: 100%;
+  gap: 10px;
+}
+
