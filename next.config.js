@@ -43,6 +43,10 @@ const nextConfig = {
                 protocol: 'http',   // Use http for local development or specific vps server
                 hostname: 'localhost',
             },
+            {
+                protocol: 'http',   // Use http for local development or specific vps server
+                hostname: 'https://game-store-nine-roan.vercel.app',
+            },
         ],
     },
 
