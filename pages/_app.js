@@ -15,6 +15,10 @@ import { loadCart } from "@/store/cartSlice";
 import Maintenance from '@/components/Maintenance';
 import { AuthProvider } from '@/context/AuthContext';
 
+// this is for vercel speed insight and performance monitoring
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from "@vercel/analytics/next"
+
 
 // Optional: Configure NProgress
 NProgress.configure({ showSpinner: false }); // only bar
@@ -112,6 +116,8 @@ export default function MyApp({ Component, pageProps }) {
                 <Header />
                 <main className="flex-grow">
                   <Component {...pageProps} />
+                  <SpeedInsights />
+                  <Analytics />
                   <Toaster position="top-right" />
                 </main>
                 <Footer />
